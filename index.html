@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.main1{
+    display: flex;
+     justify-content: center;
+     margin-top: 100px;
+    
+    
+
+}
+.main2{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 80px;
+    
+
+}
+button{
+    border-radius: 10px;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(117, 79, 152);
+    font-size: 15px;
+    font-weight: 100px;
+    color: aliceblue;
+    box-shadow: 10px 5px 2px rgba(15, 15, 15, 0.4);
+    
+}
+     
+   
+
+    /* #di{
+        width: 300px;
+        height: 250px;
+        background-color: brown;
+    } */
+</style>
+<body>
+<!--     
+<button onclick="show1()" >red</button>
+<button onclick="show2()" >blue</button> -->
+<!-- <div id="di"> <h1>Hello</h1></div>
+ 
+<input id="in" type="text" placeholder="enter any color name">
+<button onclick="show1()" >show</button> -->
+
+<div class="main1">
+<button onclick="my()">changen dice</button>
+</div>
+<div class="main2">
+<img id="img" src="">
+</div>
+
+
+    <script>
+
+ function my(){
+    var total=0
+    var random=Math.ceil(Math.random()*6)
+    console.log(random);
+    var take=document.getElementById("img");
+    if(random==1){
+       take.src="./one.png" 
+    
+    }
+
+    else if(random==2){
+       take.src="./two.png" 
+    }
+
+    else if(random==3){
+       take.src="./three.png" 
+    }
+
+    else if(random==4){
+       take.src="./four.png" 
+    }
+
+    else if(random==5){
+       take.src="./five.png" 
+    }
+
+    else if(random==6){
+       take.src="./six.png" 
+    }
+    
+ }
+
+
+
+
+
+
+//   function show1(){
+//     var take=document.getElementById("in").value;
+//     document.getElementById("di").style.color=take;
+//   }
+  
+
+//    function show2(){
+//     document.body.style.backgroundColor="blue"
+//   }
+    </script>
+</body>
+</html>
